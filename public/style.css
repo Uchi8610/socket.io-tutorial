@@ -1,0 +1,30 @@
+#inputmyname {
+  display:none
+}
+
+#myname{
+  text-shadow:1px 1px 0 black;
+  font-size: 24px;
+}
+
+#chat {
+  display:none
+}
+
+#chat li{
+  text-shadow:1px 1px 0 black;
+  font-size: 24px;
+}
+
+#msglist {
+  list-style-type:none; padding-left:1px;
+}
+
+.msg-me {
+  background-color: antiquewhite;
+}
+
+.name {
+  font-weight:bold
+}
+

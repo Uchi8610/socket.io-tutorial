@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SocketIOチャット</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+  </head>
+  <body>
+    <h1>SocketIOチャット</h1>
+    
+    <!-- STEP1. 接続中 -->
+    <section id="nowconnecting">
+      ...サーバに接続中
+    </section>
+    <!-- /接続中 -->
+    
+    <!-- STEP2. 名前を入力 -->
+    <section id="inputmyname">
+      <p>あなたの名前と色を入力してください</p>
+      <form id="frm-myname">
+        <input type="text" id="txt-myname">
+        <button id="name-sbmit">入室</button>
+        <input type="color" value="black" id="coler-picker">
+      </form>
+    </section>
+    <!-- /名前を入力 -->
+    
+    <!-- STEP3. チャット開始 -->
+    <section id="chat">
+      <!-- 発言フォーム -->
+      <form id="frm-post">
+        <span id="myname" onClick="changeUserDate()"></span>&nbsp;<input type="text" id="msg">
+        <button>送信</button>
+      </form>
+      
+      <!-- 発言ログ -->
+      <ul id="msglist">
+      </ul>
+    </section>
+    <!-- /チャット本体 -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    <!-- <script src="util.js"></script> -->
+  </body>
+</html>
+
